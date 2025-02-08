@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Page</title>
+</head>
+<body>
+    <div>
+        <h1 id="heading">Welcome to My Website</h1>
+        <h2>About This Page</h2>
+        <h3 class="arsh">Introduction</h3>
+        <p class="arsh">This is a simple HTML page containing basic elements like headings, paragraphs, and divs.</p>
+        <p class="arsh">HTML is the standard language for creating web pages.</p>
+        
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <a href="https://www.example.com">Visit Example</a>
+
+        <div>
+            <p>Note:This is a nested div with a paragraph.</p>
+        </div>
+    </div>
+    
+<script>
+document.body.childNodes[0].innerText ="uday";
+document.body.style.background = "red";
+console.dir(document.body);
+
+
+// Selecting with ID 
+let d = document.getElementById("heading");
+console.log(d);
+console.dir(d);
+
+// Selecting with Class
+let c = document.getElementsByClassName("arsh");
+console.log(c);
+console.dir(c);
+
+// Selecting by Tag Name
+let p = document.getElementsByTagName("p");
+console.log(p);
+console.dir(p);
+
+
+// Query Selector -> can select element by Id , class or tag
+
+// Returns first element
+let element = document.querySelector("li");
+console.log(element);
+console.dir(element);
+
+// Returns all elements
+let Allelements = document.querySelectorAll("li");
+console.log(Allelements);
+console.dir(Allelements);
+
+// ID
+let ele = document.querySelector("#heading");
+console.log(ele);
+console.dir(ele);
+
+// Class
+let e = document.querySelector(".arsh");
+console.log(e);
+console.dir(e);
+
+// similarly we can use QuerySelectorAll for Id and class. But for Id it doesn't make any sense
+    </script>
+</body>
+</html>
