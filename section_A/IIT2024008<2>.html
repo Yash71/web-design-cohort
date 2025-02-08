@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTER BUTTON</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+    text-align: center;
+    color: #333;
+    }
+
+    #countLabel {
+        display: block;
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 5em;
+        color: #333;
+    }
+
+    .btncontainer {
+        text-align: center;    
+    }
+
+    .button {
+        background-color:cadetblue;
+        border: none;
+        font-family: Helvetica;
+        font-size: 1.5em;
+        padding: 10px 20px;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+
+    .buttoninc {
+        background-color:cadetblue;
+        border: none;
+        font-family: Helvetica;
+        font-size: 1.5em;
+        padding: 10px 20px;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .button:hover{
+        background-color: #333;
+    }
+
+    .buttoninc:hover{
+        background-color: #333;
+    }
+    </style>
+</head>
+<body>
+    <h1>Counter Button</h1>
+    <label id="countLabel">0</label>  
+    <div class="btncontainer">
+        <button id="decrement" class="button">Decrement</button>
+        <button id="reset" class="button">Reset</button>
+        <button class="buttoninc">Increment</button>
+    </div>
+    
+    <script>
+        const decrement = document.getElementById('decrement');
+        const increment = document.getElementsByClassName('buttoninc')[0];  
+        const countLabel = document.getElementsByTagName('label')[0];
+        const reset = document.querySelector('#reset');
+
+        let count = 0;
+
+        increment.onclick = function() {
+            count++;
+            countLabel.textContent = count;
+        }
+
+        decrement.onclick = function() {
+            count--;
+            countLabel.textContent = count;
+        }
+
+        reset.onclick = function() {
+            count = 0 ;
+            countLabel.textContent = count;
+        }
+    </script>
+</body>
+</html>
