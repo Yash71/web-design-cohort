@@ -1,0 +1,16 @@
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
