@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h2 class="P">...</h2>
+    <h2 class="P">...</h2>
+    <h3 id="p1">...</h3>
+    <p>...</p>
+    <button onclick="hi()">Say Hi</button>
+
+    <script>
+        let para = document.getElementsByClassName("P");
+        if (para) para[0].textContent = "This is the first element which has class 'P'";
+
+        let id1 = document.getElementById("p1");
+        if (id1) id1.textContent = "This element has id 'p1'";
+
+        let par = document.querySelector("p");
+        if (par) par.textContent = "This is a paragraph";
+
+        function hi() {
+            alert("hello");
+        }
+    </script>
+
+</body>
+</html>
