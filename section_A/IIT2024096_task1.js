@@ -3,7 +3,7 @@
 const hello=(name)=>{
     console.log("Hello ",name);
 }
-hello("Suvanwita");
+hello("Sarvansh");
 
 const sum=(a,b,c)=>{
     return a+b+c;
